@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafePetsShop</title>
+    <!-- Enlazo hojas de estilos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Flaticons -->
+    <!-- Para poner el icono de pestaña deseado -->
+    <link href="img/Logo_Safepets.ico" rel="icon">
+</head>
+
+<body>
+    <!-- Bloque header inicio -->
+    <header class="header">
+        <a href="index.html">
+            <!-- acomodamos en css el width de las img y lo cambiamos a max-width-->
+            <!--alt> significa alternativo y si la img no se carga por lo menos aparece la leyenda que alli coloquemos -->
+            <!--la img es un elemto del bloque header-->
+            <img class="header__logo" src="img/Logo_Safepets.ico" alt="Logotipo" title="Tienda ropa">
+        </a>
+    </header>
+    <!--  Bloque fin -->
+    <nav class="navegacion">
+        <!--cada enlace (a) son elementos del blque nav -->
+        <!--href enlazo a archivos que requeiro -->
+        <a class="navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="contenedorFormulario">
+       
+       
+            
+        
+            <div id="wrap">
+            <br><br>
+                <form  onsubmit="return validarFormulario()" id="form" novalidate>
+                    
+                    <hr>
+                            <h2>¿Tienes alguna consulta o sugerencia?</h2>
+                                <hr><hr>
+                                <p>Completa este formulario para ponerte en contacto con nosotros</p></label>
+                                <hr>
+                            <br>
+                    
+                    <div>
+                        <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" required name="nombre" autocomplete="off" placeholder="Ingresa tu nombre" >
+                   </div>
+                    <div>
+                    <label for="email">Tu Email:</label>
+                    <input type="email" id="email"  name="email" autocomplete="off" required placeholder="Ingresa tu correo">
+                    </div>
+                    <div>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" autocomplete="off" name="asunto">
+                    </div>
+                    <div>
+                    <label for="descripcion">Mensaje:</label>
+                    <textarea name="descripcion" autocomplete="off" required id="descripcion" cols="30" rows="5" placeholder="Escribe tu mensaje
+Te responderemos lo antes posible"></textarea>
+                    </div>
+                    <input type="submit" id="enviar" value="Enviar">
+                    <script defer src="Javascript/validacion.js"></script>
+                </form>
+               
+    
+           
+            
+       
+    </main>
+    
+
+
+    <footer class="footer">
+        
+
+        <p class="footer__texto">SafePetsShop - Todos los derechos Reservados 2024</p>
+
+    </footer>
+</body>
+</html>
